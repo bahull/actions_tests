@@ -21,8 +21,7 @@ jobs:
           npm ci
           npm run build --if-present
           npm test
-      - name: ES Lint Run
-        uses: "rkusa/eslint-action@master"
-        secrets: ${{ secrets.GITHUB_TOKEN }}
-        args:  ""
+      - name: ESLint checks
+        uses: gimenete/eslint-action@1.0
+
           CI: true
