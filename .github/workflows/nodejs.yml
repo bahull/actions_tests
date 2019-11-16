@@ -23,6 +23,6 @@ jobs:
           npm test
       - name: ES Lint Run
         uses: "rkusa/eslint-action@master"
-        secrets: [${{ secrets.GITHUB_TOKEN }}]
+        secrets: ${{ secrets.GITHUB_TOKEN }}
         args:  ""
           CI: true
